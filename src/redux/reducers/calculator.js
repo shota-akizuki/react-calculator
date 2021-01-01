@@ -40,7 +40,6 @@ const calculator = (state = initialAppState, action) => {
           ...state,
           operetor: "+",
           inputValue: 0,
-          //2桁目以降を表示するには、はじめに入力した数値をいったんstateに保持して、その値に*10しなければならない。
           resultValue: state.resultValue + state.inputValue,
           showingResult: true,
         };

@@ -32,7 +32,7 @@ export const App = (props) => {
       <div className="result">
         <Result
           result={
-            calculator.showingrResult
+            calculator.showingResult
               ? calculator.resultValue
               : calculator.inputValue
           }
