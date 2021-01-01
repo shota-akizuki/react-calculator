@@ -1,0 +1,58 @@
+#root {
+  width: 220px;
+  margin: auto;
+  .result {
+    height: 40px;
+    background: black;
+    .resultValue {
+      text-align: end;
+      font-size: 30px;
+      height: 100%;
+      color: white;
+      padding-right: 15px;
+    }
+  }
+  .button-wrapper {
+    display: flex;
+    justify-content: center;
+    background: black;
+
+    //buttonタグ全てに有効
+    button {
+      border-radius: 50%;
+      width: 40px;
+      height: 40px;
+      margin: 5px;
+      background-color: #555555;
+      border: none;
+      color: white;
+      font-size: 25px;
+      padding: 0%;
+      &:hover {
+        background: #999999;
+      }
+      &:focus {
+        //白枠を消す
+        outline: none;
+      }
+    }
+    .operator {
+      display: flex;
+      flex-direction: column;
+      button {
+        background: orange;
+        //ホバー時
+        &:hover {
+          background: #ffc7af;
+        }
+        //フォーカス時
+        &:focus {
+          color: orange;
+          background: white;
+        }
+      }
+    }
+  }
+}
+
+//scssは入れ子にしてスタイルが書ける
